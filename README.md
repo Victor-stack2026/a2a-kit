@@ -15,7 +15,7 @@ A buyer's AI agent (Grok Bot, Claude, ChatGPT…) reads a site's agent card and 
 ## Use in a site
 
 ```bash
-npm install github:Victor-stack2026/a2a-kit#v0.1.0 @a2a-js/sdk@^1.3.0
+npm install github:Victor-stack2026/a2a-kit#<commit> @a2a-js/sdk@^1.3.0
 ```
 
 ```ts
@@ -37,4 +37,4 @@ The site keeps what is its own: the agent card, how its sales agent answers (sam
 
 ## Changing it
 
-`dist/` is committed so sites can install straight from a git tag. After changing `src/`: `npm run check` (builds, tests, fails if `dist/` is stale), commit, tag `vX.Y.Z`, then bump the tag in each site.
+`dist/` is committed so sites can install straight from a git tag. After changing `src/`: `npm run check` (builds, tests, fails if `dist/` is stale), commit, note the commit SHA, then point each site at it (`github:Victor-stack2026/a2a-kit#<commit>`).

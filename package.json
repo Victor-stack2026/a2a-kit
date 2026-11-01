@@ -1,6 +1,6 @@
 {
   "name": "@pikpop/a2a-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared A2A 1.0 plumbing for pikpop's AI sales agents: JSON-RPC entry for Next.js routes, one-message replies with structured offers and media links.",
   "license": "UNLICENSED",
   "type": "module",
@@ -9,11 +9,17 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md"],
-  "engines": { "node": ">=20" },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "tsx --test tests/*.test.ts",
